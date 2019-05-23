@@ -1,4 +1,4 @@
-import cv2, dlib, argparse, os
+import cv2, argparse, os
 import numpy as np
 from mtcnn.mtcnn import MTCNN
 
