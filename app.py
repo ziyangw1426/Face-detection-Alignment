@@ -25,8 +25,8 @@ def align(input_image, face_dec):
     s_height, s_width = img.shape[:2]
 
     try:
-        left_eye = detector_faces(img)[0]['left_eye']
-        right_eye = detector_faces(img)[0]['right_eye']
+        left_eye = face_dec.detect_faces(img)[0]['keypoints']['left_eye']
+        right_eye = face_dec.detect_faces(img)[0]['keypoints']['right_eye']
     except:
         return None
     
